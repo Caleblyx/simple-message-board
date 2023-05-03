@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.msg-date {
+  font-size: medium;
+  color:grey;
+}
+.msg-form{
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+.form-row{
+  width: 100%;
+}
+
+label {
+  display: table-cell;
+  padding-right: 20px;
+  width: 5%
+}
+
+input[type="text"] {
+  display: table-cell;
+  width: 80%;
+}

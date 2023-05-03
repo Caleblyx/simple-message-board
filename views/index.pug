@@ -1,0 +1,12 @@
+extends layout
+block content
+  h1= title
+  p Welcome to #{title}
+  block form
+  each msg in messages
+    div(class = "msg-card")
+      div
+        h2 #{msg.user} 
+          span(class = "msg-date") #{msg.added}
+      p #{msg.text}
+  include form.pug
