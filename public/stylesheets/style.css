@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,27 +9,91 @@ a {
   color: #00B7FF;
 }
 
+#title {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  background-color: #627E8B;
+  color: #EAEDF0;
+  width: 70%;
+  margin: 0 auto 1vh auto;
+  padding: 1vmin 4vmin;
+  border-radius: 20px;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 70%;
+  margin: auto;
+  background-color: #D2CCCC;
+  padding: 2vmin;
+  border-radius: 20px;
+  overflow: scroll;
+  height: 50vh;
+  border: #D2CCCC solid 2vmin;
+}
+.msg-card {
+  background-color: #EAEDF0;
+  height: 14vh;
+  padding: 1vh 1vw;
+  border-radius: 20px;
+}
+
 .msg-date {
   font-size: medium;
   color:grey;
 }
 .msg-form{
+  background-color: #EAEDF0;
   display:flex;
-  flex-direction: column;
   gap: 1em;
-  align-items: flex-start;
-}
-.form-row{
-  width: 100%;
+  justify-content: space-between;
+  width: 70%;
+  margin: 1vh auto;
+  padding: 4vmin;
+  border-radius: 20px;
 }
 
-label {
-  display: table-cell;
-  padding-right: 20px;
-  width: 5%
+.msg-input{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
 }
 
 input[type="text"] {
   display: table-cell;
-  width: 80%;
+  width: 95%;
+  border: none;
+}
+
+#msg-input-text {
+  line-height: 8vh;
+  padding: 0 1vw;
+  font-size: 14px;
+}
+
+#msg-input-name {
+  padding: 0 1vw;
+  line-height: 5vh;
+  font-size: 18px;
+}
+
+#submit-msg-bg{
+  margin: auto;
+  background-color: #D2CCCC;
+  border-radius: 20px;
+  padding: 1vmin;
+  transition: 1s;
+}
+
+#submit-msg-bg:hover{
+  filter: brightness(50%);
+}
+
+#submit-msg {
+  height: 10vh;
+  margin: auto;
 }

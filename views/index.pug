@@ -1,12 +1,12 @@
 extends layout
 block content
-  h1= title
-  p Welcome to #{title}
+  div(id="title") #{title}
   block form
-  each msg in messages
-    div(class = "msg-card")
-      div
-        h2 #{msg.user} 
-          span(class = "msg-date") #{msg.added}
-      p #{msg.text}
+  div(id="messages")
+    each msg in messages
+      div(class = "msg-card")
+        div
+          h2 #{msg.user} 
+            span(class = "msg-date") #{msg.added}
+        p #{msg.text}
   include form.pug
